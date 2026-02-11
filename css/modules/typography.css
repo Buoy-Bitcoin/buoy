@@ -20,33 +20,49 @@
 }
 
 /* Headings (serif for elegance) */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Inter", sans-serif;
-  font-weight: 600; /* Bold for emphasis */
-  color: var(--text); /* Strong for emphasis */
+  font-weight: 600;
+  /* Bold for emphasis */
+  color: var(--text);
+  /* Strong for emphasis */
 }
 
 h2 {
   font-size: 1.6em;
   margin-bottom: 10px;
-  text-align: left; /* Center category titles */
+  text-align: left;
+  /* Center category titles */
 }
 
 /* Paragraphs and other text */
 /* Scope Ubuntu Mono globally but allow blog overrides */
-p, li, a {
+p,
+li,
+a {
   font-family: "Ubuntu Mono", monospace;
-  font-weight: 400; /* Regular weight */
-  line-height: 1.5; /* Improve readability */
+  font-weight: 400;
+  /* Regular weight */
+  line-height: 1.5;
+  /* Improve readability */
 }
 
-/* Blog context overrides */
+/* Blog and article context overrides */
 .blog-article p,
 .blog-article li,
 .blog-article a,
 .blog-list a,
 .article-card,
-.article-card * {
+.article-card *,
+.vs-verdict-p,
+.vs-verdict-p p,
+.article-section p,
+.article-section li {
   font-family: "Inter", sans-serif !important;
 }
 
@@ -88,4 +104,3 @@ p, li, a {
   margin-bottom: 10px;
   text-align: left;
 }
-

@@ -16,6 +16,96 @@ let FAQS = {};
 const SELF_PATH = path.join(__dirname, "build-compare.mjs");
 const COUNTRIES_PATH = path.join(ROOT, "data", "countries.json");
 let COUNTRY_NAME_MAP = null;
+const ARTICLES_PATH = path.join(ROOT, "data", "articles");
+
+// Simple markdown-to-HTML converter for editorial content
+function markdownToHtml(md) {
+  if (!md) return "";
+  let html = md
+    // Escape HTML entities first (except for our own tags we'll add)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    // Headers (h2 and h3 only - h1 is the page title)
+    .replace(/^### (.+)$/gm, "<h3>$1</h3>")
+    .replace(/^## (.+)$/gm, "<h2>$1</h2>")
+    // Bold and italic
+    .replace(/\*\*\*(.+?)\*\*\*/g, "<strong><em>$1</em></strong>")
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*(.+?)\*/g, "<em>$1</em>")
+    // Links [text](url)
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+    // Unordered lists
+    .replace(/^- (.+)$/gm, "<li>$1</li>")
+    // Paragraphs (double newlines)
+    .split(/\n\n+/)
+    .map(block => {
+      block = block.trim();
+      if (!block) return "";
+      // Don't wrap if it's already a block element
+      if (/^<(h[23]|ul|ol|li|p|div)/.test(block)) return block;
+      // Wrap list items in ul
+      if (block.includes("<li>")) return `<ul>${block}</ul>`;
+      return `<p>${block.replace(/\n/g, "<br>")}</p>`;
+    })
+    .filter(Boolean)
+    .join("\n");
+  return html;
+}
+
+// Parse article markdown file into sections by HTML comment markers
+function parseArticleSections(content) {
+  const sections = {
+    "quick-take": null,
+    "beyond-the-features": null,
+    "who-should-use-which": null,
+    "how-we-evaluated": null,
+    "sources": null
+  };
+  const sectionNames = Object.keys(sections);
+  const markerPattern = /<!--\s*(quick-take|beyond-the-features|who-should-use-which|how-we-evaluated|sources)\s*-->/gi;
+
+  // Find all markers and their positions
+  const markers = [];
+  let match;
+  while ((match = markerPattern.exec(content)) !== null) {
+    markers.push({ name: match[1].toLowerCase(), index: match.index, endIndex: match.index + match[0].length });
+  }
+
+  // Extract content between markers
+  for (let i = 0; i < markers.length; i++) {
+    const current = markers[i];
+    const next = markers[i + 1];
+    const startIdx = current.endIndex;
+    const endIdx = next ? next.index : content.length;
+    const sectionContent = content.slice(startIdx, endIdx).trim();
+    if (sectionContent && sectionNames.includes(current.name)) {
+      sections[current.name] = markdownToHtml(sectionContent);
+    }
+  }
+
+  return sections;
+}
+
+// Load article for a pair slug if it exists
+async function loadArticle(pairSlug) {
+  const filePath = path.join(ARTICLES_PATH, `${pairSlug}.md`);
+  try {
+    const content = await fs.readFile(filePath, "utf8");
+    return parseArticleSections(content);
+  } catch (_e) {
+    return null; // No article file exists
+  }
+}
+
+// Render an article section as HTML
+function renderArticleSection(sectionName, html, cssClass) {
+  if (!html) return "";
+  return `
+<section class="article-section article-section--${cssClass}" aria-labelledby="article-${cssClass}">
+  ${html}
+</section>`;
+}
 
 // Known category hubs used for breadcrumb linking (if present)
 const CATEGORY_HUBS = {
@@ -322,7 +412,7 @@ function featureLabelHtml(feature) {
     `;
   }
   const key = feature.key;
-  const needsSub = ['features','supported_network','price','subscription_fees','conversion_fees','settlement_time','kyc_required','recovery_method','open_source','node_connect','dca','pos_compatibility','interface','app_ratings','support','founded_in','website','description'].includes(key);
+  const needsSub = ['features', 'supported_network', 'price', 'subscription_fees', 'conversion_fees', 'settlement_time', 'kyc_required', 'recovery_method', 'open_source', 'node_connect', 'dca', 'pos_compatibility', 'interface', 'app_ratings', 'support', 'founded_in', 'website', 'description'].includes(key);
   return `<div class="feature-label${needsSub ? ' sublabel' : ''}">${escapeHtml(feature.label)}</div>`;
 }
 
@@ -506,8 +596,8 @@ async function htmlForPair(a, b, categoryLabel, updated) {
     : `\n<div class="breadcrumb-back"><a href="/">< Back to Home</a></div>`;
 
   const breadcrumbHtml = `\n<nav class="breadcrumbs" aria-label="Breadcrumb">\n  <ol>\n    <li><a href="/">Home</a></li>\n    <li>` + (categoryUrl
-      ? `<a href="${categoryUrl}"><span id="breadcrumb-category-label">${categoryLabel}</span></a>`
-      : `<span id="breadcrumb-category-label">${categoryLabel}</span>`) + `</li>\n    <li><span id="breadcrumb-current" aria-current="page">${aName} vs ${bName}</span></li>\n  </ol>\n</nav>`;
+    ? `<a href="${categoryUrl}"><span id="breadcrumb-category-label">${categoryLabel}</span></a>`
+    : `<span id="breadcrumb-category-label">${categoryLabel}</span>`) + `</li>\n    <li><span id="breadcrumb-current" aria-current="page">${aName} vs ${bName}</span></li>\n  </ol>\n</nav>`;
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -563,14 +653,32 @@ async function htmlForPair(a, b, categoryLabel, updated) {
   // Build baked comparison table for the pair
   const tableHtml = await renderCompareTableHTML(a, b, categoryLabel);
 
+  // Load editorial article content if available
+  const article = await loadArticle(pairSlug);
+
+  // Prepare article sections HTML
+  const articleQuickTake = article && article["quick-take"] ? article["quick-take"] : null;
+  const articleBeyondFeatures = article && article["beyond-the-features"]
+    ? renderArticleSection("beyond-the-features", article["beyond-the-features"], "beyond-features")
+    : "";
+  const articleWhoShouldUse = article && article["who-should-use-which"]
+    ? renderArticleSection("who-should-use-which", article["who-should-use-which"], "who-should-use")
+    : "";
+  const articleHowEvaluated = article && article["how-we-evaluated"]
+    ? renderArticleSection("how-we-evaluated", article["how-we-evaluated"], "how-evaluated")
+    : "";
+  const articleSources = article && article["sources"]
+    ? renderArticleSection("sources", article["sources"], "sources")
+    : "";
+
   // Optional FAQ block for specific compare pages (e.g., muun-vs-phoenix)
   const faqs = (FAQS && FAQS[pairSlug]) || null;
   const faqSectionHtml = Array.isArray(faqs) && faqs.length > 0
     ? `\n<section class="brand-faq" aria-labelledby="faq-heading" data-pair="${pairSlug}">\n  <h2 id="faq-heading">FAQs</h2>\n  <div class="faq-list">\n    ${faqs.map(item => {
-        const q = escapeAttr(item.q);
-        const a = escapeAttr(item.a);
-        return `<details><summary>${q}</summary><div><p>${a}</p></div></details>`;
-      }).join("\n    ")}\n  </div>\n</section>`
+      const q = escapeAttr(item.q);
+      const a = escapeAttr(item.a);
+      return `<details><summary>${q}</summary><div><p>${a}</p></div></details>`;
+    }).join("\n    ")}\n  </div>\n</section>`
     : "";
 
   const faqLd = Array.isArray(faqs) && faqs.length > 0 ? {
@@ -616,8 +724,8 @@ async function htmlForPair(a, b, categoryLabel, updated) {
   <script defer src="https://feedback.fish/ff.js?pid=17f299e6843396" crossorigin="anonymous"></script>
   <script defer src="https://cloud.umami.is/script.js" data-website-id="0895676a-bb0e-488d-9381-a27cf9cf5888" data-domains="buoybitcoin.com,www.buoybitcoin.com"></script>
 <script type="application/ld+json">${JSON.stringify({
-    "@context":"https://schema.org",
-    "@type":"WebPage",
+    "@context": "https://schema.org",
+    "@type": "WebPage",
     name: title,
     url: canonical,
     description: desc,
@@ -717,7 +825,7 @@ async function htmlForPair(a, b, categoryLabel, updated) {
   </div>
   <section id="vs-verdict" aria-live="polite"${verdictAttrs}>
     <h2 class="feature-label verdict-title">Quick take</h2>
-    ${verdictText ? `<p class="vs-verdict-p">${escapeAttr(verdictText)}</p>` : ""}
+    ${articleQuickTake ? `<div class="vs-verdict-p">${articleQuickTake}</div>` : (verdictText ? `<p class="vs-verdict-p">${escapeAttr(verdictText)}</p>` : "")}
   </section>
   <div id="comparison-table-wrapper">${tableHtml}</div>
 </div>
@@ -726,7 +834,10 @@ ${faqSectionHtml}
 
 <!-- BUILD:END -->
 
-
+${articleBeyondFeatures}
+${articleWhoShouldUse}
+${articleHowEvaluated}
+${articleSources}
 
 <!-- Rating Modal -->
 <div id="rating-modal" class="rating-modal">
@@ -775,8 +886,8 @@ ${faqSectionHtml}
     <div class="footer-column">
       <h3>From the maker of Buoy</h3>
       <ul>
+        <li><a href="https://dittotranscriptgenerator.com/" target="_blank" rel="noopener">Ditto</a></li>
         <li><a href="https://breen.studio/" target="_blank" rel="noopener">Breen Studio</a></li>
-        <li><a href="https://www.jaspervanderee.com/" target="_blank" rel="noopener">Jasper van de Ree</a></li>
       </ul>
     </div>
   </div>
@@ -826,7 +937,7 @@ ${faqSectionHtml}
 
   for (const [cat, list] of byCat.entries()) {
     // Sort by name for stable output
-    const sorted = list.slice().sort((a,b) => a.name.localeCompare(b.name));
+    const sorted = list.slice().sort((a, b) => a.name.localeCompare(b.name));
     for (let i = 0; i < sorted.length; i++) {
       for (let j = i + 1; j < sorted.length; j++) {
         const a = sorted[i];

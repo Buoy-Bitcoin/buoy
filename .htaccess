@@ -1,6 +1,10 @@
 # ==== Buoy canonical redirects (static compare/service) ====
 RewriteEngine On
 
+# Force non-www (301 permanent redirect)
+RewriteCond %{HTTP_HOST} ^www\.buoybitcoin\.com [NC]
+RewriteRule ^(.*)$ https://buoybitcoin.com/$1 [R=301,L]
+
 # Redirect any /index.html to clean slash URL
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)/index\.html [NC]
 RewriteRule ^ %1/ [R=301,L]

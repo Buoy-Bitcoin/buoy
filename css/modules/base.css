@@ -15,11 +15,13 @@ body {
   font-family: "Ubuntu Mono", monospace;
   background: var(--bg);
   color: var(--text);
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
 }
 
 p {
-  margin-bottom: 2em; /* or try 2em for more space */
+  margin-bottom: 2em;
+  /* or try 2em for more space */
 }
 
 ::selection {
@@ -32,9 +34,24 @@ a {
 }
 
 /* Default form control styling outside the dark menu overlay */
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
   background: var(--panel);
   color: var(--text);
   border: 1px solid var(--border);
 }
 
+/* Content pages (about, learn) use Inter instead of Ubuntu Mono */
+body.content-page,
+body.content-page main,
+body.content-page main p,
+body.content-page main li,
+body.content-page main h1,
+body.content-page main h2,
+body.content-page main h3,
+body.content-page main strong,
+body.content-page main a {
+  font-family: "Inter", sans-serif;
+}

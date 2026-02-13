@@ -1,196 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What is Lightning? - Learn about Lightning, the second layer of the Bitcoin network that makes transactions fast, cheap, and scalable.</title>
-  <meta name="description" content="Learn about Lightning, the second layer of the Bitcoin network that makes transactions fast, cheap, and scalable."/>
-  <link rel="canonical" href="https://buoybitcoin.com/what-is-lightning.html"/>
+  <title>What is Lightning? - Learn about Lightning, the second layer of the Bitcoin network that makes transactions
+    fast, cheap, and scalable.</title>
+  <meta name="description"
+    content="Learn about Lightning, the second layer of the Bitcoin network that makes transactions fast, cheap, and scalable." />
+  <link rel="canonical" href="https://buoybitcoin.com/what-is-lightning.html" />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://buoybitcoin.com/what-is-lightning.html"/>
-  <meta property="og:title" content="What is Lightning?"/>
-  <meta property="og:description" content="Learn about Lightning, the second layer of the Bitcoin network that makes transactions fast, cheap, and scalable."/>
-  <meta property="og:image" content="https://buoybitcoin.com/android-chrome-512x512.png"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="What is Lightning?"/>
-  <meta name="twitter:description" content="Learn about Lightning, the second layer of the Bitcoin network that makes transactions fast, cheap, and scalable."/>
-  <meta name="twitter:image" content="https://buoybitcoin.com/android-chrome-512x512.png"/>
-  <meta name="twitter:site" content="@jaspervanderee"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://buoybitcoin.com/what-is-lightning.html" />
+  <meta property="og:title" content="What is Lightning?" />
+  <meta property="og:description"
+    content="Learn about Lightning, the second layer of the Bitcoin network that makes transactions fast, cheap, and scalable." />
+  <meta property="og:image" content="https://buoybitcoin.com/android-chrome-512x512.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What is Lightning?" />
+  <meta name="twitter:description"
+    content="Learn about Lightning, the second layer of the Bitcoin network that makes transactions fast, cheap, and scalable." />
+  <meta name="twitter:image" content="https://buoybitcoin.com/android-chrome-512x512.png" />
+  <meta name="twitter:site" content="@jaspervanderee" />
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
   <script defer src="https://feedback.fish/ff.js?pid=17f299e6843396" crossorigin="anonymous"></script>
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="0895676a-bb0e-488d-9381-a27cf9cf5888" data-domains="buoybitcoin.com,www.buoybitcoin.com"></script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="0895676a-bb0e-488d-9381-a27cf9cf5888"
+    data-domains="buoybitcoin.com,www.buoybitcoin.com"></script>
 </head>
-<body>
-  <div class="container">
- <header>
-  <div class="container">
-    <div id="logo">
-      <a href="https://buoybitcoin.com/">
-        <img src="images/buoy-logo-horizontal.svg" alt="Buoy Bitcoin logo">
-      </a>
-    </div>
-    <button class="hamburger" aria-label="Toggle Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-<nav class="menu">
-  <div class="menu-content">
-    <!-- Search bar -->
-    <div class="search-bar">
-  <div class="search-wrapper">
-    <input type="text" placeholder="Search..." id="menu-search" />
-    <div id="search-suggestions" class="search-suggestions"></div>
-  </div>
-  <button id="menu-compare-btn" class="compare-btn">compare</button>
-</div>
-<div id="menu-selected-services" class="selected-services"></div>
 
-    <!-- Menu sections -->
-    <section class="menu-section">
-      <ul>
-        <div class="custom-dropdown">
-          <div class="dropdown-label" id="dropdown-label">
-            <img src="images/global-white.svg" alt="Your Location" class="availability-icon" />
-            <span>Your location</span>
-          </div>
-          <input type="text" id="country-search" placeholder="Type your country..." style="display:none;" />
-          <ul class="dropdown-list"></ul>
-        </div>
-
-		  
-        <li>
-          <a href="about.html">
-            <img src="images/about.svg" alt="About Icon" />
-            About
+<body class="content-page">
+  <div class="container">
+    <header>
+      <div class="container">
+        <div id="logo">
+          <a href="https://buoybitcoin.com/">
+            <img src="images/buoy-logo-horizontal.svg" alt="Buoy Bitcoin logo">
           </a>
-        </li>
-        <li>
-  <a href="faq.html">
-    <img src="images/faq.svg" alt="FAQ Icon" />
-    FAQ
-  </a>
-</li>
-<li>
-  <a href="#donate" id="donate-link">
-    <img src="images/lightning.svg" alt="Donate Icon" />
-    Donate
-  </a>
-</li>
-<li>
-  <a data-feedback-fish href="javascript:void(0)">
-    <img src="images/feedback.svg" alt="Feedback Icon" />
-    Give us feedback
-  </a>
-</li>
-<li>
-  <a id="contact-link" href="mailto:support&#64;buoybitcoin.com">
-    <img src="images/contact.svg" alt="Contact Icon"/>
-    Contact
-  </a>
-</li>
+        </div>
+        <button class="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="menu">
+        <div class="menu-content">
+          <!-- Search bar -->
+          <div class="search-bar">
+            <div class="search-wrapper">
+              <input type="text" placeholder="Search..." id="menu-search" />
+              <div id="search-suggestions" class="search-suggestions"></div>
+            </div>
+            <button id="menu-compare-btn" class="compare-btn">compare</button>
+          </div>
+          <div id="menu-selected-services" class="selected-services"></div>
 
-      </ul>
-    </section>
-  </div>
-</nav>
-
-</header>
-<body>
-  <main class="space">
-    <h1>What Is the Bitcoin Lightning Network?</h1>
-  <p>The <strong>Lightning Network</strong> is a breakthrough technology built on top of Bitcoin that makes transactions <strong>fast, cheap, and scalable</strong>. Think of it as a “second layer” on top of the Bitcoin blockchain—like a highway that takes the pressure off local roads.</p>
-  <p>Bitcoin itself is incredibly secure and decentralized, but that security comes with tradeoffs: it can be slow and expensive to use for everyday payments. That’s where Lightning comes in.</p>
-  <p>With Lightning, you can send Bitcoin <strong>instantly</strong>, for <strong>almost no cost</strong>, anywhere in the world. Whether you're tipping a creator, paying for a coffee, or sending money abroad, Lightning makes it effortless.</p>
-
-  <h2>Why Is Lightning Important?</h2>
-  <p>Without Lightning, Bitcoin transactions can take up to 10 minutes or more to confirm and often carry fees of $1 or more—fine for large or final settlement, but not ideal for day-to-day use.</p>
-  <ul>
-    <li><strong>Speed:</strong> Payments are nearly instant—faster than a credit card swipe.</li>
-    <li><strong>Low fees:</strong> You can send fractions of a cent. Microtransactions are now possible.</li>
-    <li><strong>Scalability:</strong> Bitcoin can now handle millions of transactions per second, off-chain.</li>
-    <li><strong>Privacy:</strong> Lightning payments don’t appear on the public blockchain, offering more transactional privacy.</li>
-  </ul>
-
-  <h2>Using Bitcoin to Send Money</h2>
-  <p>Traditionally, sending money across borders is slow, costly, and packed with bureaucracy. You deal with:</p>
-  <ul>
-    <li>Intermediaries like Western Union or banks</li>
-    <li>Currency exchange rates and hidden fees</li>
-    <li>Days or even weeks of delay</li>
-  </ul>
-  <p>With Bitcoin on the Lightning Network, that all disappears.</p>
-  <p>You can send <strong>sats</strong> (small units of Bitcoin) instantly to anyone, anywhere—no borders, no banks, no paperwork. It’s like sending a text message. And the best part? Both the sender and receiver keep more of their money.</p>
-
-  <h2>What Is a Lightning Address?</h2>
-  <p>A <strong>Lightning Address</strong> is what makes sending Bitcoin truly simple for humans. It’s an easy-to-remember format that looks just like an email:</p>
-  <p><code>yourname@yourdomain.com</code></p>
-  <p>Instead of copying and pasting long wallet codes or scanning QR codes, you just type someone’s Lightning Address into your wallet and hit send.</p>
-  <p>It’s like the <strong>PayPal of Bitcoin</strong>—but decentralized and borderless.</p>
-
-  <h2>How to Get Started With Lightning</h2>
-  <ol>
-    <li><strong>Download a Lightning Wallet</strong><br>
-      Choose a wallet that supports Lightning. You can find several <a href="spend-bitcoin.html" target="_blank">here.</a></li>
-    </li>
-    <li><strong>Fund It With Bitcoin</strong><br>
-      You can buy Bitcoin from an exchange and send it to your wallet.</li>
-    <li><strong>Create or Link a Lightning Address</strong><br>
-      Some wallets or services let you create a Lightning Address.</li>
-    <li><strong>Start Sending & Receiving</strong><br>
-      Try sending a few sats to a friend or content creator. It’s fast, fun, and feels like the future.</li>
-  </ol>
-
-  <h2>Why This Matters</h2>
-  <p>Bitcoin is the foundation. But Lightning is the layer that lets Bitcoin scale to <strong>every human on Earth</strong>—whether they’re buying lunch, streaming content, or getting paid for their work.</p>
-  <p>It’s the path to <strong>hyperbitcoinization</strong>: where Bitcoin becomes everyday money.</p>
-  <p>And it’s already here.</p>
-  </main>
+          <!-- Menu sections -->
+          <section class="menu-section">
+            <ul>
+              <div class="custom-dropdown">
+                <div class="dropdown-label" id="dropdown-label">
+                  <img src="images/global-white.svg" alt="Your Location" class="availability-icon" />
+                  <span>Your location</span>
+                </div>
+                <input type="text" id="country-search" placeholder="Type your country..." style="display:none;" />
+                <ul class="dropdown-list"></ul>
+              </div>
 
 
-</div>  <!-- container -->
-<footer>
-  <div class="footer-container">
-    <div class="footer-column">
-      <h3>Social</h3>
-      <ul>
-        <li><a href="https://snort.social/p/npub165w944kqt29hrt90l2ssc0rvmhf0u77dgezskknfnczr7r030v0s2g6kae" target="_blank">Nostr</a></li>
-		<li><a href="https://x.com/jaspervanderee" target="_blank">X</a></li>
-        <li><a href="https://github.com/jaspervanderee/buoy" target="_blank">GitHub</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h3>Learn</h3>
-      <ul>
-        <li><a href="what-is-bitcoin.html">Bitcoin</a></li>
-        <li><a href="what-is-lightning.html">Lightning</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h3>Support</h3>
-      <ul>
-        <li><a href="mailto:support&#64;buoybitcoin.com">Contact</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h3>From the maker of Buoy</h3>
-      <ul>
-        <li><a href="https://dittotranscriptgenerator.com/" target="_blank" rel="noopener">Ditto</a></li>
+              <li>
+                <a href="about.html">
+                  <img src="images/about.svg" alt="About Icon" />
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="faq.html">
+                  <img src="images/faq.svg" alt="FAQ Icon" />
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="#donate" id="donate-link">
+                  <img src="images/lightning.svg" alt="Donate Icon" />
+                  Donate
+                </a>
+              </li>
+              <li>
+                <a data-feedback-fish href="javascript:void(0)">
+                  <img src="images/feedback.svg" alt="Feedback Icon" />
+                  Give us feedback
+                </a>
+              </li>
+              <li>
+                <a id="contact-link" href="mailto:support&#64;buoybitcoin.com">
+                  <img src="images/contact.svg" alt="Contact Icon" />
+                  Contact
+                </a>
+              </li>
+
+            </ul>
+          </section>
+        </div>
+      </nav>
+
+    </header>
+
+    <body>
+      <main class="space">
+        <h1>What Is the Bitcoin Lightning Network?</h1>
+        <p>The <strong>Lightning Network</strong> is a payment layer built on top of Bitcoin. It makes transactions
+          fast, cheap, and scalable. Bitcoin's base layer settles about seven transactions per second. That is
+          intentional. Keeping blocks small means anyone with a basic computer can run a node and verify the rules. But
+          that design choice means on-chain Bitcoin is not practical for buying a coffee or tipping a content creator.
+          Lightning solves that without compromising the security underneath.</p>
+        <p>With Lightning, you can send bitcoin anywhere in the world in under a second, for a fraction of a cent. The
+          payment travels through a network of payment channels and settles back to Bitcoin's base layer when those
+          channels close. You get the speed of a credit card with the security of a protocol that no one controls.</p>
+
+        <h2>How Lightning Works</h2>
+        <p>Protocols scale in layers, not by making the base bigger. The internet works the same way. TCP/IP handles the
+          foundation. HTTP handles web pages. Applications like email and video calls sit on top. Each layer does one
+          thing well and does not compromise the others. Lightning follows this same principle. It handles instant,
+          low-cost payments while anchoring back to Bitcoin's base layer for final settlement.</p>
+        <p>Two people open a payment channel by locking bitcoin into a shared address on the blockchain. Once the
+          channel is open, they can send payments back and forth as many times as they want without touching the
+          blockchain at all. When they are done, they close the channel, and the final balance settles on-chain. One
+          on-chain transaction to open, one to close, and unlimited payments in between.</p>
+        <p>You do not need a direct channel with every person you pay. Lightning routes payments through a network of
+          connected channels, finding a path from sender to receiver in milliseconds. The result is a system that can
+          handle millions of transactions per second without adding any load to Bitcoin's base layer.</p>
+
+        <h2>Why Lightning Matters</h2>
+        <p>Without Lightning, a Bitcoin transaction can take 10 minutes or more to confirm and carry fees above one
+          dollar. That is fine for large transfers or final settlement, but it does not work for everyday payments.
+          Lightning changes the math entirely.</p>
+        <ul>
+          <li><strong>Speed:</strong> Payments confirm in less than a second. Faster than tapping a credit card.</li>
+          <li><strong>Low fees:</strong> Sending a few cents costs a fraction of a cent. Microtransactions become
+            practical for the first time.</li>
+          <li><strong>Scale:</strong> Millions of transactions per second, off-chain, without congesting the base layer.
+          </li>
+          <li><strong>Privacy:</strong> Lightning payments do not appear on the public blockchain. Only the opening and
+            closing of channels are recorded on-chain, which gives everyday transactions more privacy than on-chain
+            transfers.</li>
+        </ul>
+
+        <h2>Sending Money Across Borders</h2>
+        <p>Sending money to another country through the traditional system means dealing with intermediaries. Banks,
+          Western Union, currency exchanges. Each one takes a fee. Each one adds delay. A transfer can take days and
+          cost 5 to 10 percent of the amount you send. For someone sending money home to their family, that is a real
+          loss.</p>
+        <p>Lightning removes every intermediary. You send sats (small units of bitcoin) directly from your wallet to the
+          recipient. It arrives in under a second. It costs almost nothing. No paperwork. No currency conversion. No
+          waiting period. Both the sender and the receiver keep more of their money because no one sits in the middle
+          taking a cut.</p>
+
+        <h2>What Is a Lightning Address?</h2>
+        <p>A <strong>Lightning Address</strong> makes sending bitcoin as simple as sending an email. Instead of copying
+          long wallet codes or scanning QR codes, you type a human-readable address that looks like this:</p>
+        <p><code>yourname@yourdomain.com</code></p>
+        <p>You enter the address in your wallet, type the amount, and hit send. The payment arrives in under a second.
+          Some wallets and services let you create your own Lightning Address, which means anyone who knows it can send
+          you bitcoin without needing to coordinate invoices or share public keys.</p>
+
+        <h2>Custody Matters on Lightning Too</h2>
+        <p>Not all Lightning wallets work the same way. Some are custodial, which means a company manages the payment
+          channels and holds the keys on your behalf. That is easier to set up, but it reintroduces the same trust you
+          are trying to avoid. If the company fails, restricts withdrawals, or gets hacked, your funds are at risk.</p>
+        <p>Non-custodial Lightning wallets let you control your own channels and your own keys. They require more setup,
+          but they preserve the properties that make Bitcoin valuable in the first place: no counterparty risk, no
+          permission needed, no trusted intermediary.</p>
+        <p>If you are new to Lightning, starting with a custodial wallet is a reasonable first step. But plan your move
+          to a non-custodial option as you learn. That is the difference between using Bitcoin and using a promise that
+          looks like Bitcoin.</p>
+
+        <h2>How to Get Started</h2>
+        <ol>
+          <li><strong>Download a Lightning wallet.</strong><br>
+            Choose a wallet that supports Lightning payments. You can compare several options <a
+              href="spend-bitcoin.html">here</a>.</li>
+          <li><strong>Fund it with bitcoin.</strong><br>
+            Buy bitcoin from an exchange or receive it from someone else, then send it to your Lightning wallet.</li>
+          <li><strong>Create or link a Lightning Address.</strong><br>
+            Some wallets and services let you create a Lightning Address so others can send you bitcoin using a simple,
+            memorable format.</li>
+          <li><strong>Start sending and receiving.</strong><br>
+            Try sending a few sats to a friend or a content creator. See how fast it arrives and how little it costs.
+            That experience makes the technology real in a way that reading about it never does.</li>
+        </ol>
+
+        <h2>Why This Matters</h2>
+        <p>Bitcoin is the foundation. It is the hardest money ever created, secured by energy and enforced by math. But
+          for bitcoin to work as everyday money, not just a store of value, it needs a payment layer that matches the
+          speed people expect. Lightning is that layer.</p>
+        <p>Every time someone pays for a coffee with Lightning, tips a creator with sats, or sends money across a border
+          in under a second, Bitcoin becomes more useful to more people. And every Lightning payment is still bitcoin.
+          Not a token, not a copy. Actual bitcoin moving through payment channels that settle on the same base layer
+          that protects the entire network.</p>
+        <p>You can start using Lightning today. Pick a wallet, fund it, and send your first payment. The future of money
+          is not something you wait for. It is something you can choose to use right now.</p>
+      </main>
+
+
+  </div> <!-- container -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Social</h3>
+        <ul>
+          <li><a href="https://snort.social/p/npub165w944kqt29hrt90l2ssc0rvmhf0u77dgezskknfnczr7r030v0s2g6kae"
+              target="_blank">Nostr</a></li>
+          <li><a href="https://x.com/jaspervanderee" target="_blank">X</a></li>
+          <li><a href="https://github.com/jaspervanderee/buoy" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="what-is-bitcoin.html">Bitcoin</a></li>
+          <li><a href="what-is-lightning.html">Lightning</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="mailto:support&#64;buoybitcoin.com">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>From the maker of Buoy</h3>
+        <ul>
+          <li><a href="https://dittotranscriptgenerator.com/" target="_blank" rel="noopener">Ditto</a></li>
           <li><a href="https://breen.studio/" target="_blank" rel="noopener">Breen Studio</a></li>
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <script src="js/script.js"></script>
   <script src="js/compare.js"></script>
 </body>
-</html>
 
+</html>

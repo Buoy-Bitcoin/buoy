@@ -877,6 +877,111 @@
 }
 
 
+/* === CATEGORY PAGE — Intro & FAQ sections === */
+
+/* Intro text between heading and service grid */
+.category-intro {
+  margin: 0 0 32px 0;
+  font-family: "Inter", sans-serif;
+  font-size: .95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.category-intro p {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.category-intro p+p {
+  margin-top: 16px;
+}
+
+.category-intro a {
+  font-family: "Inter", sans-serif;
+  color: var(--link);
+  text-decoration: none;
+}
+
+.category-intro a:hover {
+  text-decoration: underline;
+}
+
+/* FAQ section below the service grid */
+.category-faq {
+  margin: 48px 0 0 0;
+  padding: 0;
+}
+
+.category-faq h2 {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 600;
+  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  line-height: 1.3;
+  margin: 0 0 16px 0;
+}
+
+.category-faq .brand-faq {
+  margin-bottom: 0;
+}
+
+.category-faq .brand-faq details>div {
+  padding: 8px 0 4px 28px;
+}
+
+.category-faq .brand-faq details>div p {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: .9rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--text);
+}
+
+.category-faq .brand-faq details>div p+p {
+  margin-top: 8px;
+}
+
+.category-faq .brand-faq summary {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.category-faq .brand-faq details>div a {
+  font-family: "Ubuntu Mono", monospace;
+  color: var(--link);
+  text-decoration: none;
+}
+
+.category-faq .brand-faq details>div a:hover {
+  text-decoration: underline;
+}
+
+/* Breadcrumbs on category pages — show the trail, not back link */
+.category .breadcrumbs {
+  margin-bottom: 20px;
+}
+
+.category .breadcrumbs ol {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category .breadcrumb-back {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  .category .breadcrumbs ol {
+    display: none;
+  }
+
+  .category .breadcrumb-back {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+
+
 /* Jump to navigation (minimal inline style) */
 .jump-nav {
   display: none;

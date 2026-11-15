@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /go/
+Disallow: /data/
 
 Sitemap: https://buoybitcoin.com/sitemap.xml
-Sitemap: https://buoybitcoin.com/sitemap-services.xml

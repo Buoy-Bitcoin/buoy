@@ -1,449 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>River vs Swan — Which is better? | Buoy Bitcoin</title>
-  <meta name="description" content="Compare River and Swan (Buy Bitcoin): fees, custody, features, and more."/>
-  <link rel="canonical" href="https://buoybitcoin.com/compare/river-vs-swan"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://buoybitcoin.com/compare/river-vs-swan"/>
-  <meta property="og:title" content="River vs Swan — Which is better? | Buoy Bitcoin"/>
-  <meta property="og:description" content="Compare River and Swan (Buy Bitcoin): fees, custody, features, and more."/>
-  <meta property="og:image" content="https://buoybitcoin.com/android-chrome-512x512.png"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="River vs Swan — Which is better? | Buoy Bitcoin"/>
-  <meta name="twitter:description" content="Compare River and Swan (Buy Bitcoin): fees, custody, features, and more."/>
-  <meta name="twitter:image" content="https://buoybitcoin.com/android-chrome-512x512.png"/>
-  <meta name="twitter:site" content="@jaspervanderee"/>
-  <link rel="stylesheet" href="/css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
-  <script defer src="https://feedback.fish/ff.js?pid=17f299e6843396" crossorigin="anonymous"></script>
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="0895676a-bb0e-488d-9381-a27cf9cf5888" data-domains="buoybitcoin.com,www.buoybitcoin.com"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"River vs Swan — Which is better? | Buoy Bitcoin","url":"https://buoybitcoin.com/compare/river-vs-swan","description":"Compare River and Swan (Buy Bitcoin): fees, custody, features, and more.","dateModified":"2026-08-02T11:39:30.144Z","publisher":{"@type":"Organization","name":"Buoy Bitcoin","url":"https://buoybitcoin.com/","logo":{"@type":"ImageObject","url":"https://buoybitcoin.com//apple-touch-icon.png","width":112,"height":112},"sameAs":["https://x.com/jaspervanderee","https://github.com/jaspervanderee/buoy","https://snort.social/p/npub165w944kqt29hrt90l2ssc0rvmhf0u77dgezskknfnczr7r030v0s2g6kae"]},"about":[{"@type":"Organization","name":"River","url":"https://river.com","logo":{"@type":"ImageObject","url":"https://buoybitcoin.com//images/river.svg"}},{"@type":"Organization","name":"Swan","url":"https://www.swanbitcoin.com","logo":{"@type":"ImageObject","url":"https://buoybitcoin.com//images/swan.svg"}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://buoybitcoin.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://buoybitcoin.com/buy-bitcoin","name":"Buy Bitcoin"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://buoybitcoin.com/compare/river-vs-swan","name":"River vs Swan"}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Swan Bitcoin or River better for beginners?","acceptedAnswer":{"@type":"Answer","text":"Both are designed for long-term savers, not traders. River has a slightly more streamlined app experience and zero-fee recurring buys, which reduces friction for someone just starting to stack sats. Swan puts more emphasis on education and self-custody onboarding, which means a steeper initial learning curve but stronger habits from the start."}},{"@type":"Question","name":"How do Swan and River approach self-custody differently?","acceptedAnswer":{"@type":"Answer","text":"Swan has a stated company goal of 'zero sats under custody' and built Swan Vault, a 2-of-3 multisig setup where you hold two keys on Blockstream Jade devices. Swan also acquired Specter, an open-source wallet, so users can recover funds independently. River encourages self-custody through auto-withdrawals and one free monthly on-chain withdrawal, but also positions itself as a long-term custodial home with in-house cold storage and monthly Proof of Reserves. Both platforms offer free withdrawals. The difference is whether the architecture nudges you toward leaving or staying."}},{"@type":"Question","name":"Does Swan or River charge lower fees?","acceptedAnswer":{"@type":"Answer","text":"River offers zero-fee recurring buys after the first seven days. Swan charges 0.99% on all purchases after the first $10,000 in lifetime buys (which are free). For ongoing DCA, River is meaningfully cheaper. Both offer free withdrawals to self-custody."}},{"@type":"Question","name":"Can I use Swan or River outside the United States?","acceptedAnswer":{"@type":"Answer","text":"No. Both platforms are US-only. Swan is available in all 50 states. River is available in 48 states but excludes New York and Nevada. If you're outside the US, Buoy covers other Bitcoin services that may be available in your region."}},{"@type":"Question","name":"What is Swan Vault and how does it compare to River's custody?","acceptedAnswer":{"@type":"Answer","text":"Swan Vault is a collaborative self-custody solution using a 2-of-3 multisig setup. You hold two keys on Blockstream Jade signing devices, and Swan manages a third key for recovery. You can move funds without Swan's permission, and you can recover your Bitcoin independently using Specter Desktop if Swan ever disappears. River does not offer a comparable self-custody product. River's custody is institutional: in-house cold storage, multi-sig, full reserve, with auto-withdrawals to push Bitcoin to your own wallet when a balance threshold is met."}},{"@type":"Question","name":"Why does alignment matter when choosing a Bitcoin platform?","acceptedAnswer":{"@type":"Answer","text":"Most comparison sites evaluate fees, features, and user experience. Those things matter. But the company you trust with your money is also building toward a specific future. A platform that builds for your independence has different incentives than one that builds to keep you. Buoy evaluates that direction because we believe the tools you use should be aligned with the future you're saving for. You can read more about how we evaluate on our About page."}}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"River","brand":{"@type":"Brand","name":"River"},"category":"Buy Bitcoin","positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"Free recurring orders"},{"@type":"ListItem","position":2,"name":"Earn interest on cash"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"US only"},{"@type":"ListItem","position":2,"name":"Incentivizes custodial saving"},{"@type":"ListItem","position":3,"name":"KYC required"}]}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Swan","brand":{"@type":"Brand","name":"Swan"},"category":"Buy Bitcoin","positiveNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"First $10.000 no fees"},{"@type":"ListItem","position":2,"name":"Education focused"},{"@type":"ListItem","position":3,"name":"Bitcoin retirement products"}]},"negativeNotes":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"name":"US only"},{"@type":"ListItem","position":2,"name":"Fees on recurring buys"},{"@type":"ListItem","position":3,"name":"KYC required"}]}}</script>
-<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>River vs Swan: which one points toward a free market? | Buoy</title>
+<meta name="description" content="River and Swan side by side on seven yes-or-no markers: ID, payment, custody, Lightning, loans and yield, fiat balances and open source.">
+<link rel="canonical" href="https://buoybitcoin.com/compare/river-vs-swan">
+<meta property="og:title" content="River vs Swan: which one points toward a free market? | Buoy">
+<meta property="og:description" content="River and Swan side by side on seven yes-or-no markers: ID, payment, custody, Lightning, loans and yield, fiat balances and open source.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://buoybitcoin.com/compare/river-vs-swan">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff" href="../fonts/Baskerville-Italic.woff" crossorigin>
+<link rel="preload" as="font" type="font/woff" href="../fonts/WhitneyHTF-Book.woff" crossorigin>
+<link rel="stylesheet" href="../css/site.css">
 </head>
-<body data-url-mutate="off">
-  <div class="container">
- <header>
-  <div class="container">
-    <div id="logo"><a href="/"><img src="/images/buoy-logo-horizontal.svg" alt="Buoy Bitcoin logo"></a></div>
-    <button class="hamburger" aria-label="Toggle Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-<nav class="menu">
-  <div class="menu-content">
-    <!-- Search bar -->
-    <div class="search-bar">
-  <div class="search-wrapper">
-    <input type="text" placeholder="Search..." id="menu-search" />
-    <div id="search-suggestions" class="search-suggestions"></div>
-  </div>
-  <button id="menu-compare-btn" class="compare-btn">compare</button>
-</div>
-<div id="menu-selected-services" class="selected-services"></div>
-
-    <!-- Menu sections -->
-    <section class="menu-section">
-      <ul>
-        <div class="custom-dropdown">
-          <div class="dropdown-label" id="dropdown-label">
-            <img src="/images/global-white.svg" alt="Your Location" class="availability-icon" />
-            <span>Your location</span>
-          </div>
-          <input type="text" id="country-search" placeholder="Type your country..." style="display:none;" />
-          <ul class="dropdown-list"></ul>
-        </div>
-
-        <li>
-          <a href="/about">
-            <img src="/images/about.svg" alt="About Icon" />
-            About
-          </a>
-        </li>
-        <li>
-  <a href="/faq">
-    <img src="/images/faq.svg" alt="FAQ Icon" />
-    FAQ
-  </a>
-</li>
-<li>
-  <a href="#donate" id="donate-link">
-    <img src="/images/lightning.svg" alt="Donate Icon" />
-    Donate
-  </a>
-</li>
-<li>
-  <a data-feedback-fish href="javascript:void(0)">
-    <img src="/images/feedback.svg" alt="Feedback Icon" />
-    Give us feedback
-  </a>
-</li>
-<li>
-  <a id="contact-link" href="mailto:support&#64;buoybitcoin.com">
-    <img src="/images/contact.svg" alt="Contact Icon"/>
-    Contact
-  </a>
-</li>
-
-      </ul>
-    </section>
-  </div>
-</nav>
-
+<body>
+<header class="nav">
+  <a class="logo" href="../"><img src="../images/logos/buoy-logo-horizontal.svg" alt="Buoy, to the homepage" width="158" height="40"></a>
+  <nav aria-label="Main">
+    <a href="../about">About</a>
+    <a href="../about#v4v" data-v4v>V4V</a>
+  </nav>
 </header>
- <main>
-  <div class="category-header category-header--vs">
-    <h1 id="page-title">River vs Swan</h1>
-    <div class="page-updated" data-updated="2026-08-02T11:39:30.144Z">Updated: August 2026</div>
-    
-<div class="breadcrumb-back"><a href="/buy-bitcoin">< Back to Buy Bitcoin</a></div>
-    
-<nav class="breadcrumbs" aria-label="Breadcrumb">
-  <ol>
-    <li><a href="/">Home</a></li>
-    <li><a href="/buy-bitcoin"><span id="breadcrumb-category-label">Buy Bitcoin</span></a></li>
-    <li><span id="breadcrumb-current" aria-current="page">River vs Swan</span></li>
-  </ol>
-</nav>
+<main class="page">
+  <h1>River <span aria-hidden="true">vs</span><span class="vh">versus</span> Swan</h1>
+  <div class="cmp">
+  <div class="row head"><span></span>
+    <div class="svc"><span class="mark" style="-webkit-mask-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuMi4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjAgQnVpbGQgMTE2KSAgLS0+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5zdDAgewogICAgICAgIGZpbGw6ICNjYjllNTg7CiAgICAgIH0KICAgICAgICAud29yZG1hcmsgeyBmaWxsOiAjMDAwOyB9ICAvKiBsaWdodCBtb2RlOiBibGFjayB0ZXh0ICovCgpAbWVkaWEgKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSB7CiAgLndvcmRtYXJrIHsgZmlsbDogI2ZmZjsgfSAgLyogZGFyayBtb2RlOiB3aGl0ZSB0ZXh0ICovCn0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMy4xLDY0LjlsMjIuMS00OC40YzAtLjIuNCwwLC4zLjFsLTE1LjgsNDUuOWMyLjQtLjcsNC44LTEuNCw3LjMtMS44bDEwLjUtNDMuNGMwLS4yLjQtLjEuMywwbC02LjEsNDIuNmMyLS4yLDQuMS0uNCw2LjEtLjVsMi00MmMwLS4yLjMtLjIuMywwbDIsNDJjMi4xLDAsNC4xLjIsNi4xLjVsLTYuMS00Mi42YzAtLjIuMy0uMy4zLDBsMTAuNSw0My40YzIuNS41LDQuOSwxLjEsNy4zLDEuOGwtMTUuOC00NS45YzAtLjIuMi0uMy4zLS4xbDIyLjEsNDguNGM0LDEuNyw3LjgsMy44LDExLjMsNi4zTDUwLDUsMTEuOCw3MS4yYzMuNS0yLjQsNy4zLTQuNSwxMS4zLTYuMyIvPgogIDxwYXRoIGNsYXNzPSJ3b3JkbWFyayIgZD0iTTMwLjgsOTVoLTMuNWwtMi41LTQuOGgtNC4xdjQuOGgtMy4xdi0xMy45aDcuNmMxLjYsMCwyLjguNCwzLjcsMS4zLjkuOSwxLjMsMS45LDEuMywzLjJzLS4yLDEuNi0uNiwyLjRjLS40LjctMSwxLjMtMS44LDEuNmwyLjksNS40aDBaTTIwLjgsODcuMWg0LjZjLjYsMCwxLS4xLDEuMy0uNC4zLS4zLjUtLjYuNS0xLjFzLS4yLS44LS41LTEuMWMtLjMtLjMtLjgtLjQtMS4zLS40aC00LjZ2Mi45aDBaTTM2LDk1aC0zLjF2LTEzLjloMy4xdjEzLjlaTTQ1LjQsOTQuOWw0LTEzLjhoMy40bC00LDEzLjloLTYuOGwtMy44LTEzLjloMy40bDMuOSwxMy44aDBaTTY2LjgsOTEuOXYzLjFoLTEyLjN2LTEzLjloMTIuMnYzLjFoLTkuMXYyLjNoOXYzLjFoLTl2Mi4zaDkuMiwwWk04Mi4yLDk1aC0zLjVsLTIuNS00LjhoLTQuMXY0LjhoLTMuMXYtMTMuOWg3LjZjMS42LDAsMi44LjQsMy43LDEuMy45LjksMS4zLDEuOSwxLjMsMy4ycy0uMiwxLjYtLjYsMi40Yy0uNC43LTEsMS4zLTEuOCwxLjZsMi45LDUuNGgwWk03Mi4yLDg3LjFoNC42Yy42LDAsMS0uMSwxLjMtLjQuMy0uMy41LS42LjUtMS4xcy0uMi0uOC0uNS0xLjFjLS4zLS4zLS44LS40LTEuMy0uNGgtNC42djIuOWgwWiIvPgo8L3N2Zz4=);mask-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuMi4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjAgQnVpbGQgMTE2KSAgLS0+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5zdDAgewogICAgICAgIGZpbGw6ICNjYjllNTg7CiAgICAgIH0KICAgICAgICAud29yZG1hcmsgeyBmaWxsOiAjMDAwOyB9ICAvKiBsaWdodCBtb2RlOiBibGFjayB0ZXh0ICovCgpAbWVkaWEgKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSB7CiAgLndvcmRtYXJrIHsgZmlsbDogI2ZmZjsgfSAgLyogZGFyayBtb2RlOiB3aGl0ZSB0ZXh0ICovCn0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMy4xLDY0LjlsMjIuMS00OC40YzAtLjIuNCwwLC4zLjFsLTE1LjgsNDUuOWMyLjQtLjcsNC44LTEuNCw3LjMtMS44bDEwLjUtNDMuNGMwLS4yLjQtLjEuMywwbC02LjEsNDIuNmMyLS4yLDQuMS0uNCw2LjEtLjVsMi00MmMwLS4yLjMtLjIuMywwbDIsNDJjMi4xLDAsNC4xLjIsNi4xLjVsLTYuMS00Mi42YzAtLjIuMy0uMy4zLDBsMTAuNSw0My40YzIuNS41LDQuOSwxLjEsNy4zLDEuOGwtMTUuOC00NS45YzAtLjIuMi0uMy4zLS4xbDIyLjEsNDguNGM0LDEuNyw3LjgsMy44LDExLjMsNi4zTDUwLDUsMTEuOCw3MS4yYzMuNS0yLjQsNy4zLTQuNSwxMS4zLTYuMyIvPgogIDxwYXRoIGNsYXNzPSJ3b3JkbWFyayIgZD0iTTMwLjgsOTVoLTMuNWwtMi41LTQuOGgtNC4xdjQuOGgtMy4xdi0xMy45aDcuNmMxLjYsMCwyLjguNCwzLjcsMS4zLjkuOSwxLjMsMS45LDEuMywzLjJzLS4yLDEuNi0uNiwyLjRjLS40LjctMSwxLjMtMS44LDEuNmwyLjksNS40aDBaTTIwLjgsODcuMWg0LjZjLjYsMCwxLS4xLDEuMy0uNC4zLS4zLjUtLjYuNS0xLjFzLS4yLS44LS41LTEuMWMtLjMtLjMtLjgtLjQtMS4zLS40aC00LjZ2Mi45aDBaTTM2LDk1aC0zLjF2LTEzLjloMy4xdjEzLjlaTTQ1LjQsOTQuOWw0LTEzLjhoMy40bC00LDEzLjloLTYuOGwtMy44LTEzLjloMy40bDMuOSwxMy44aDBaTTY2LjgsOTEuOXYzLjFoLTEyLjN2LTEzLjloMTIuMnYzLjFoLTkuMXYyLjNoOXYzLjFoLTl2Mi4zaDkuMiwwWk04Mi4yLDk1aC0zLjVsLTIuNS00LjhoLTQuMXY0LjhoLTMuMXYtMTMuOWg3LjZjMS42LDAsMi44LjQsMy43LDEuMy45LjksMS4zLDEuOSwxLjMsMy4ycy0uMiwxLjYtLjYsMi40Yy0uNC43LTEsMS4zLTEuOCwxLjZsMi45LDUuNGgwWk03Mi4yLDg3LjFoNC42Yy42LDAsMS0uMSwxLjMtLjQuMy0uMy41LS42LjUtMS4xcy0uMi0uOC0uNS0xLjFjLS4zLS4zLS44LS40LTEuMy0uNGgtNC42djIuOWgwWiIvPgo8L3N2Zz4=)"></span><span class="vh">River</span>
+      <div class="score"><svg viewBox="0 0 120 64" aria-hidden="true"><circle cx="8.8" cy="51.0" r="1.15" class="on"/><circle cx="10.5" cy="43.9" r="1.15" class="on"/><circle cx="13.3" cy="37.2" r="1.15" class="on"/><circle cx="16.9" cy="30.9" r="1.15" class="off" opacity="0.70"/><circle cx="21.4" cy="25.2" r="1.15" class="off" opacity="0.67"/><circle cx="26.6" cy="20.2" r="1.15" class="off" opacity="0.65"/><circle cx="32.4" cy="15.9" r="1.15" class="off" opacity="0.62"/><circle cx="38.8" cy="12.5" r="1.15" class="off" opacity="0.59"/><circle cx="45.7" cy="10.0" r="1.15" class="off" opacity="0.57"/><circle cx="52.8" cy="8.5" r="1.15" class="off" opacity="0.54"/><circle cx="60.0" cy="8.0" r="1.15" class="off" opacity="0.51"/><circle cx="67.2" cy="8.5" r="1.15" class="off" opacity="0.49"/><circle cx="74.3" cy="10.0" r="1.15" class="off" opacity="0.46"/><circle cx="81.2" cy="12.5" r="1.15" class="off" opacity="0.44"/><circle cx="87.6" cy="15.9" r="1.15" class="off" opacity="0.41"/><circle cx="93.4" cy="20.2" r="1.15" class="off" opacity="0.38"/><circle cx="98.6" cy="25.2" r="1.15" class="off" opacity="0.36"/><circle cx="103.1" cy="30.9" r="1.15" class="off" opacity="0.33"/><circle cx="106.7" cy="37.2" r="1.15" class="off" opacity="0.30"/><circle cx="109.5" cy="43.9" r="1.15" class="off" opacity="0.28"/><circle cx="111.2" cy="51.0" r="1.15" class="off" opacity="0.25"/></svg><span class="vh">Score: </span><b>3<small><span class="vh"> out of</span><span aria-hidden="true"> /</span> 21</small></b></div></div>
+    <div class="svc"><span class="mark" style="-webkit-mask-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuMi4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjAgQnVpbGQgMTE2KSAgLS0+Cgo8ZGVmcz4KICAgIDxzdHlsZT4KICAgICA6d2hlcmUocGF0aCwgcG9seWdvbiwgcmVjdCwgY2lyY2xlLCBlbGxpcHNlKSB7IGZpbGw6ICMwMDJhNjM7IH0KICAgICBAbWVkaWEgKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSB7CiAgICAgICA6d2hlcmUocGF0aCwgcG9seWdvbiwgcmVjdCwgY2lyY2xlLCBlbGxpcHNlKSB7IGZpbGw6ICNmZmY7IH0KICAgICB9CiAgIDwvc3R5bGU+CiA8L2RlZnM+CiAgICAKICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDguMiw0YzI4LTEuNCw0Ni41LDI5LjMsMzEuNyw1My4zLTEzLDIxLjEtNDMuMywyMi41LTU4LDIuNUM1LjMsMzcuNCwyMC41LDUuNCw0OC4yLDRaTTY2LjcsMzQuMWMwLS4zLDAtLjYtLjEtLjktLjQtMS42LTEuMi0zLjItMS41LTQuOSwwLS42LjQtMS4yLjUtMS44LDEuNC01LTYuMS04LjYtOS45LTkuNy03LTItMTctLjgtMjEuNSw1LjYtMy4xLDQuNS0yLjUsMTAuMSwxLjcsMTMuNiw2LjQsNS40LDE1LjgsNi40LDIyLjQsMTEuMnM1LjUsNi44LDMuOCwxMS4yYy0uMi41LS42LjktLjUsMS40LjIuMiwxLjMtLjYsMS42LS43LDUuMy0zLjQsOS40LTkuOSw1LjgtMTYtMy45LTYuNS0xNi05LjItMjIuNi0xMi42LTIuMy0xLjItNS4xLTMtMy44LTYsLjktMi4xLDMuNy0yLjgsNS44LTIuNyw1LjguMywxMS40LDQuNywxNS4yLDguOHMxLjksMi40LDIuOCwzLjQuMi4xLjMuMVpNMjgsMzIuOGgtLjNjLTEuNiw1LjItMS4zLDExLjEsMSwxNi4xLDMuMyw3LjMsMTAuNSwxMi45LDE4LjYsMTMuNywzLjYuMyw4LjUtLjUsOS40LTQuNiwxLTQuNi0zLjQtNi43LTYuOC04LjJzLTcuMy0yLjktMTAuOC00LjVjLTUuMy0yLjUtMTAuNS02LTExLTEyLjRaIi8+CiAgPGc+CiAgICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDMsOTQuOWwtMS02LjRoMGMwLS4xLTMuMSw2LjMtMy4xLDYuM2gtLjNjMCwuMS0yLjIuMy0yLjIuMy0uMiwwLS40LS4yLS40LS40bC0xLjMtOC44Yy0uMy0uNy0xLS4xLTEuNC4ybC0uNS0uN2MxLjEtMS4zLDIuNy0zLjIsNC43LTIuNnMxLjIsMS4yLDEuMywyYy4zLDEuNy4zLDMuNi41LDUuNHYuNmMuMSwwLDMuNS03LjQsMy41LTcuNGgyLjZzMS4zLDguMywxLjMsOC4zYy44LTEuMiwxLjYtMi40LDIuNC0zLjctLjMtMS40LTEuNS0zLS42LTQuNXMxLjgtMS4xLDIuNy0uOC42LjMuNy44Yy42LDItLjcsNC4xLTEuNyw1LjZzLTIuNCwzLjQtMy43LDQuOC0uOC45LTEuMSwxYy0uNi4xLTEuMywwLTEuOS4ybC0uMy0uMloiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik03MS42LDg1LjFjMS4yLTEsMi41LTIuMSw0LjEtMi40LDIuNi0uNCwyLjksMS40LDIuNiwzLjVzLTEuMSwzLjctMS40LDUuNi0uMi45LjIsMSwxLjQtMSwxLjYtMS40bC44LjVjLTEsMS44LTIuOSwzLjQtNS4xLDMuM3MtMi0xLjYtMS42LTMuMi45LTMuMSwxLjItNC43LjQtMS43LS4zLTEuOC0xLjkuNi0yLjQsMS4ybC0xLjcsOGgtLjFjLS42LDAtMS4yLDAtMS44LDBzLS45LDAtMS4zLjEtLjYsMC0uOS0uM2wyLTkuNC0xLjQtLjN2LTFjLjEsMCw1LjQtMS40LDUuNC0xLjRsLjUuNS0uNCwyWiIvPgogICAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTIzLjMsOTAuNGwuMywzLjJjMS4zLjMsMy41LjQsNC4xLTEuMS44LTIuMy0yLjEtMy41LTMuNC00LjhzLTEuOC0yLjItMS45LTMuNmMtLjQtNS44LDYuOS02LjcsMTAuNy00LjJsLS40LDMuNGgtMi4zcy0uMi0yLjktLjItMi45YzAtLjItLjktLjMtMS4yLS4zLTEuMSwwLTIuMy41LTIuNiwxLjYtLjYsMS45LDEuOSwzLDMuMSw0czIuNywyLjcsMi41LDQuOGMtLjMsNS4yLTcuOCw1LjktMTEuMywzLjZsLjQtMy43aDIuM1oiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02NS4xLDkxLjhjLS45LDEuOC0zLjEsNC01LjMsMy4ycy0xLjMtMS4zLTEuNC0yLjJjLTEuMywxLjYtNC44LDMuNy02LjMsMS4zcy0uNC00LjcuNi02LjVjMS43LTIuOSw2LjEtNi41LDkuNi00LjJsMS45LS44Yy4xLDAsLjQuMi40LjRsLTIuMSw4LjhjMCwuMi0uMS43LjIuOC43LjIsMS4zLTEsMS42LTEuNGwuOC41Wk01OC42LDg0LjVjLTIuMi4zLTMuMiw1LjEtMi44LDYuOXMxLjksMS4xLDIuNy4ybDEuNS02LjhjMC0uMS0uNC0uMi0uNi0uMy0uMywwLS42LS4xLS45LDBaIi8+CiAgPC9nPgo8L3N2Zz4=);mask-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMjkuMi4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogMi4xLjAgQnVpbGQgMTE2KSAgLS0+Cgo8ZGVmcz4KICAgIDxzdHlsZT4KICAgICA6d2hlcmUocGF0aCwgcG9seWdvbiwgcmVjdCwgY2lyY2xlLCBlbGxpcHNlKSB7IGZpbGw6ICMwMDJhNjM7IH0KICAgICBAbWVkaWEgKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSB7CiAgICAgICA6d2hlcmUocGF0aCwgcG9seWdvbiwgcmVjdCwgY2lyY2xlLCBlbGxpcHNlKSB7IGZpbGw6ICNmZmY7IH0KICAgICB9CiAgIDwvc3R5bGU+CiA8L2RlZnM+CiAgICAKICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDguMiw0YzI4LTEuNCw0Ni41LDI5LjMsMzEuNyw1My4zLTEzLDIxLjEtNDMuMywyMi41LTU4LDIuNUM1LjMsMzcuNCwyMC41LDUuNCw0OC4yLDRaTTY2LjcsMzQuMWMwLS4zLDAtLjYtLjEtLjktLjQtMS42LTEuMi0zLjItMS41LTQuOSwwLS42LjQtMS4yLjUtMS44LDEuNC01LTYuMS04LjYtOS45LTkuNy03LTItMTctLjgtMjEuNSw1LjYtMy4xLDQuNS0yLjUsMTAuMSwxLjcsMTMuNiw2LjQsNS40LDE1LjgsNi40LDIyLjQsMTEuMnM1LjUsNi44LDMuOCwxMS4yYy0uMi41LS42LjktLjUsMS40LjIuMiwxLjMtLjYsMS42LS43LDUuMy0zLjQsOS40LTkuOSw1LjgtMTYtMy45LTYuNS0xNi05LjItMjIuNi0xMi42LTIuMy0xLjItNS4xLTMtMy44LTYsLjktMi4xLDMuNy0yLjgsNS44LTIuNyw1LjguMywxMS40LDQuNywxNS4yLDguOHMxLjksMi40LDIuOCwzLjQuMi4xLjMuMVpNMjgsMzIuOGgtLjNjLTEuNiw1LjItMS4zLDExLjEsMSwxNi4xLDMuMyw3LjMsMTAuNSwxMi45LDE4LjYsMTMuNywzLjYuMyw4LjUtLjUsOS40LTQuNiwxLTQuNi0zLjQtNi43LTYuOC04LjJzLTcuMy0yLjktMTAuOC00LjVjLTUuMy0yLjUtMTAuNS02LTExLTEyLjRaIi8+CiAgPGc+CiAgICA8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDMsOTQuOWwtMS02LjRoMGMwLS4xLTMuMSw2LjMtMy4xLDYuM2gtLjNjMCwuMS0yLjIuMy0yLjIuMy0uMiwwLS40LS4yLS40LS40bC0xLjMtOC44Yy0uMy0uNy0xLS4xLTEuNC4ybC0uNS0uN2MxLjEtMS4zLDIuNy0zLjIsNC43LTIuNnMxLjIsMS4yLDEuMywyYy4zLDEuNy4zLDMuNi41LDUuNHYuNmMuMSwwLDMuNS03LjQsMy41LTcuNGgyLjZzMS4zLDguMywxLjMsOC4zYy44LTEuMiwxLjYtMi40LDIuNC0zLjctLjMtMS40LTEuNS0zLS42LTQuNXMxLjgtMS4xLDIuNy0uOC42LjMuNy44Yy42LDItLjcsNC4xLTEuNyw1LjZzLTIuNCwzLjQtMy43LDQuOC0uOC45LTEuMSwxYy0uNi4xLTEuMywwLTEuOS4ybC0uMy0uMloiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik03MS42LDg1LjFjMS4yLTEsMi41LTIuMSw0LjEtMi40LDIuNi0uNCwyLjksMS40LDIuNiwzLjVzLTEuMSwzLjctMS40LDUuNi0uMi45LjIsMSwxLjQtMSwxLjYtMS40bC44LjVjLTEsMS44LTIuOSwzLjQtNS4xLDMuM3MtMi0xLjYtMS42LTMuMi45LTMuMSwxLjItNC43LjQtMS43LS4zLTEuOC0xLjkuNi0yLjQsMS4ybC0xLjcsOGgtLjFjLS42LDAtMS4yLDAtMS44LDBzLS45LDAtMS4zLjEtLjYsMC0uOS0uM2wyLTkuNC0xLjQtLjN2LTFjLjEsMCw1LjQtMS40LDUuNC0xLjRsLjUuNS0uNCwyWiIvPgogICAgPHBhdGggY2xhc3M9InN0MCIgZD0iTTIzLjMsOTAuNGwuMywzLjJjMS4zLjMsMy41LjQsNC4xLTEuMS44LTIuMy0yLjEtMy41LTMuNC00LjhzLTEuOC0yLjItMS45LTMuNmMtLjQtNS44LDYuOS02LjcsMTAuNy00LjJsLS40LDMuNGgtMi4zcy0uMi0yLjktLjItMi45YzAtLjItLjktLjMtMS4yLS4zLTEuMSwwLTIuMy41LTIuNiwxLjYtLjYsMS45LDEuOSwzLDMuMSw0czIuNywyLjcsMi41LDQuOGMtLjMsNS4yLTcuOCw1LjktMTEuMywzLjZsLjQtMy43aDIuM1oiLz4KICAgIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02NS4xLDkxLjhjLS45LDEuOC0zLjEsNC01LjMsMy4ycy0xLjMtMS4zLTEuNC0yLjJjLTEuMywxLjYtNC44LDMuNy02LjMsMS4zcy0uNC00LjcuNi02LjVjMS43LTIuOSw2LjEtNi41LDkuNi00LjJsMS45LS44Yy4xLDAsLjQuMi40LjRsLTIuMSw4LjhjMCwuMi0uMS43LjIuOC43LjIsMS4zLTEsMS42LTEuNGwuOC41Wk01OC42LDg0LjVjLTIuMi4zLTMuMiw1LjEtMi44LDYuOXMxLjksMS4xLDIuNy4ybDEuNS02LjhjMC0uMS0uNC0uMi0uNi0uMy0uMywwLS42LS4xLS45LDBaIi8+CiAgPC9nPgo8L3N2Zz4=)"></span><span class="vh">Swan</span>
+      <div class="score"><svg viewBox="0 0 120 64" aria-hidden="true"><circle cx="8.8" cy="51.0" r="1.15" class="off" opacity="0.70"/><circle cx="10.5" cy="43.9" r="1.15" class="off" opacity="0.68"/><circle cx="13.3" cy="37.2" r="1.15" class="off" opacity="0.65"/><circle cx="16.9" cy="30.9" r="1.15" class="off" opacity="0.63"/><circle cx="21.4" cy="25.2" r="1.15" class="off" opacity="0.61"/><circle cx="26.6" cy="20.2" r="1.15" class="off" opacity="0.59"/><circle cx="32.4" cy="15.9" r="1.15" class="off" opacity="0.56"/><circle cx="38.8" cy="12.5" r="1.15" class="off" opacity="0.54"/><circle cx="45.7" cy="10.0" r="1.15" class="off" opacity="0.52"/><circle cx="52.8" cy="8.5" r="1.15" class="off" opacity="0.50"/><circle cx="60.0" cy="8.0" r="1.15" class="off" opacity="0.47"/><circle cx="67.2" cy="8.5" r="1.15" class="off" opacity="0.45"/><circle cx="74.3" cy="10.0" r="1.15" class="off" opacity="0.43"/><circle cx="81.2" cy="12.5" r="1.15" class="off" opacity="0.41"/><circle cx="87.6" cy="15.9" r="1.15" class="off" opacity="0.38"/><circle cx="93.4" cy="20.2" r="1.15" class="off" opacity="0.36"/><circle cx="98.6" cy="25.2" r="1.15" class="off" opacity="0.34"/><circle cx="103.1" cy="30.9" r="1.15" class="off" opacity="0.32"/><circle cx="106.7" cy="37.2" r="1.15" class="off" opacity="0.29"/><circle cx="109.5" cy="43.9" r="1.15" class="off" opacity="0.27"/><circle cx="111.2" cy="51.0" r="1.15" class="off" opacity="0.25"/></svg><span class="vh">Score: </span><b>0<small><span class="vh"> out of</span><span aria-hidden="true"> /</span> 21</small></b></div></div>
   </div>
-<!-- BUILD:START -->
-
-<div id="comparison-container">
-  <div class="logo-row-sticky">
-    <div class="feature-values logo-row" id="logo-row-container">
-    <div class="feature-value logo-cell">
-      <a href="https://river.com" target="_blank" class="service-link">
-        <img src="/images/river.svg" alt="River logo" class="svg-icon sticky-logo" />
-        <button class="cta-button">visit</button>
-      </a>
-    </div>
-    <div class="feature-value logo-cell">
-      <a href="https://www.swanbitcoin.com" target="_blank" class="service-link">
-        <img src="/images/swan.svg" alt="Swan logo" class="svg-icon sticky-logo" />
-        <button class="cta-button">visit</button>
-      </a>
-    </div></div>
-  </div>
-  <section id="vs-verdict" aria-live="polite" data-p="Both lean heavily towards long term savings and investing in Bitcoin while focusing on the US market. {B} prioritizes education and it incurs fees after the first $10.000 while {A} offers a more traditional savings experience without recurring fees. Compare KYC posture, recurring features, and which platform fits your habits.">
-    <h2 class="feature-label verdict-title">Quick take</h2>
-    <div class="vs-verdict-p"><p>Swan and River are the two most closely matched Bitcoin-only platforms in the US. The difference is architectural direction. Swan is building toward making itself unnecessary, with a stated goal of "zero sats under custody" and tools like Swan Vault that put keys in your hands. River is building toward becoming your Bitcoin bank, with features that reward keeping your financial life on the platform. If you value sovereignty as the destination rather than a feature, Swan is the stronger choice. If you want the most polished savings experience and don't plan to self-custody soon, River is excellent at what it does. Both are US-only, but Swan is available in all 50 states while River excludes New York and Nevada.</p></div>
+  <section class="group">
+    <h2>Privacy</h2>
+    <div class="row"><span class="label">Buy without ID</span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">River: no. </span><small>ID required</small></span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">Swan: no. </span><small>ID required</small></span></div>
+    <div class="row"><span class="label">Pay without your bank</span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">River: no. </span><small>Bank only</small></span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">Swan: no. </span><small>Bank only</small></span></div>
   </section>
-  <div id="comparison-table-wrapper">
-    <table class="comparison-table"><caption class="sr-only">River vs Swan — full comparison (Buy Bitcoin)</caption><tbody>
-      
-      <tr class="feature-row type_of_platform" id="type-of-platform" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label">Platform</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river">Exchange</div>
-            <div class="feature-value" data-service="swan">Exchange</div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row features" id="features" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label sublabel">Features</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river"><div class="feature-item"><img src="/images/checkmark.svg" alt="positive icon" class="checkmark-icon"/> Free recurring orders</div><div class="feature-item"><img src="/images/checkmark.svg" alt="positive icon" class="checkmark-icon"/> Earn interest on cash</div><div class="feature-item negative-group-start"><img src="/images/cross.svg" alt="negative icon" class="checkmark-icon"/> US only</div><div class="feature-item"><img src="/images/cross.svg" alt="negative icon" class="checkmark-icon"/> Incentivizes custodial saving</div><div class="feature-item"><img src="/images/cross.svg" alt="negative icon" class="checkmark-icon"/> KYC required</div></div>
-            <div class="feature-value" data-service="swan"><div class="feature-item"><img src="/images/checkmark.svg" alt="positive icon" class="checkmark-icon"/> First $10.000 no fees</div><div class="feature-item"><img src="/images/checkmark.svg" alt="positive icon" class="checkmark-icon"/> Education focused</div><div class="feature-item"><img src="/images/checkmark.svg" alt="positive icon" class="checkmark-icon"/> Bitcoin retirement products</div><div class="feature-item negative-group-start"><img src="/images/cross.svg" alt="negative icon" class="checkmark-icon"/> US only</div><div class="feature-item"><img src="/images/cross.svg" alt="negative icon" class="checkmark-icon"/> Fees on recurring buys</div><div class="feature-item"><img src="/images/cross.svg" alt="negative icon" class="checkmark-icon"/> KYC required</div></div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row fees" id="fees" tabindex="-1">
-        <th scope="row" class="feature-label">
-      <div class="label-container">
-        <div class="feature-label">Fees</div>
-        <div class="feature-label sublabel">Processing fees</div>
-      </div>
-    </th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river"><div class="fee-structure"><div class="fee-intro">Based on monthly trading volume</div><div class="fee-tier">up to $1,000,000: <strong>1%</strong></div><div class="fee-tier">$1,000,000 - $5,000,000: <strong>0.70%</strong></div><div class="fee-tier">$5,000,000 - $15,000,000: <strong>0.40%</strong></div><div class="fee-tier">$15,000,000 and up: <strong>0.25%</strong></div></div></div>
-            <div class="feature-value" data-service="swan"><div class="fee-structure"><div class="fee-intro">Zero-fee onboarding on the first $10,000 in lifetime buys, 1% after that, plus optional custody programs billed separately.</div><div class="fee-tier">up to $10,000: <strong>0%</strong></div><div class="fee-tier">$10,000 and up: <strong>0.99%</strong></div></div></div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row dca" id="dca" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label sublabel">DCA (Dollar Cost Averaging)</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river">Yes: Recurring orders are free</div>
-            <div class="feature-value" data-service="swan">Yes: but with fees after the first $10.000</div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row payment_methods" id="payment-methods" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label">Payment Methods</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river">Bank Transfer, Wire Transfer, Direct Deposit</div>
-            <div class="feature-value" data-service="swan">Bank Transfer, Wire Transfer, Bitcoin Transfer</div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row custody_control" id="custody-control" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label">Custody &amp; Control</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river">Custodial</div>
-            <div class="feature-value" data-service="swan">Custodial</div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row kyc_required" id="kyc-required" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label sublabel">KYC Required</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river">Yes</div>
-            <div class="feature-value" data-service="swan">Yes</div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row open_source" id="open-source" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label sublabel">Open Source</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river">No</div>
-            <div class="feature-value" data-service="swan">No</div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row user_experience" id="user-experience" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label">User Experience</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river">N/A</div>
-            <div class="feature-value" data-service="swan">N/A</div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row interface" id="interface" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label sublabel">Interface</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river"><div style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%"><img src="/images/mobile.svg" class="platform-icon" alt="Mobile" style="margin-bottom:8px"/><span>Mobile only</span></div></div>
-            <div class="feature-value" data-service="swan"><div style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%"><img src="/images/mobile-desktop.svg" class="platform-icon" alt="Mobile &amp; Desktop" style="margin-bottom:8px"/><span>Mobile &amp; Desktop</span></div></div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row app_ratings" id="app-ratings" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label sublabel">App Ratings</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river"><div>iOS: 4.9</div><div>Android: 4.8</div></div>
-            <div class="feature-value" data-service="swan"><div>iOS: 4.8</div><div>Android: 4.6</div></div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row profile" id="profile" tabindex="-1">
-        <th scope="row" class="feature-label">
-      <div class="label-container">
-        <div class="feature-label">Profile</div>
-        <div class="feature-label sublabel">Founder(s)</div>
-      </div>
-    </th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river"><img src="/images/founders/alex-leishman.jpg" alt="Alex Leishman" style="width:100px;height:100px;border-radius:50%;display:block;margin:0 auto 10px auto"><div style="text-align:center">Alex Leishman</div></div>
-            <div class="feature-value" data-service="swan"><img src="/images/founders/cory-klippsten.jpg" alt="Cory Klippsten" style="width:100px;height:100px;border-radius:50%;display:block;margin:0 auto 10px auto"><div style="text-align:center">Cory Klippsten</div></div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row description" id="description" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label sublabel">Company description</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river">
-    <div class="collapsible-description">
-      <div class="description-preview">
-        <p class="mobile-preview">River helps U.S. based customers invest in Bitcoin simply and securely with a focus on long-term saving. Unlike many platforms, River holds all Bitcoin in full-reserve cold storage with multi-signatur...</p>
-        <p class="desktop-preview">River helps U.S. based customers invest in Bitcoin simply and securely with a focus on long-term saving. Unlike many platforms, River holds all Bitcoin in full-reserve cold storage with multi-signature security and gives users transparency through real-time proof of reserves. This might sound inviting to people who don&#039;t want to hold Bitcoin in self-custody but it also means more centralization within Bitcoin.</p>
-      </div>
-      <div class="description-full" style="display: none;"><p>River helps U.S. based customers invest in Bitcoin simply and securely with a focus on long-term saving. Unlike many platforms, River holds all Bitcoin in full-reserve cold storage with multi-signature security and gives users transparency through real-time proof of reserves. This might sound inviting to people who don&#039;t want to hold Bitcoin in self-custody but it also means more centralization within Bitcoin.</p><p>It supports things like inheritance planning, business accounts, and joint accounts, making it attractive for people who want to treat Bitcoin like serious money. Users can buy Bitcoin instantly, set up automated savings, and send Bitcoin via on-chain or Lightning payments. On top of that, you can earn 3.8% Bitcoin interest on your cash. The app has a clean interface and is designed to be easy to use, earning high ratings on both iOS and Android.</p><p>River&#039;s mission is to provide a trusted, high-quality experience for people who want to build wealth in Bitcoin without distractions. It aims to give users full control and transparency. While some users note strict ID verification and limited availability outside the U.S., River is praised for its reliability, personal customer service, and focus on security.</p></div>
-      <button class="expand-btn" aria-expanded="false">
-        <span class="expand-text">Read more</span>
-        <span class="expand-icon"><span class="arrow-down">↓</span></span>
-      </button>
-    </div>
+  <hr class="dots">
+  <section class="group">
+    <h2>Self-custody</h2>
+    <div class="row"><span class="label">No custodial balance</span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">River: no. </span><small>Holds your bitcoin</small></span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">Swan: no. </span><small>Holds your bitcoin</small></span></div>
+  </section>
+  <hr class="dots">
+  <section class="group">
+    <h2>Medium of exchange</h2>
+    <div class="row"><span class="label">Delivers over Lightning</span><span class="cell yes"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M10.5 16.5l4 4 7-8.5"/></svg><span class="vh">River: yes</span><small aria-hidden="true">Yes</small></span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">Swan: no</span><small aria-hidden="true">No</small></span></div>
+  </section>
+  <hr class="dots">
+  <section class="group">
+    <h2>Fiat incentives</h2>
+    <div class="row"><span class="label">No loans or yield</span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">River: no. </span><small>Interest on cash</small></span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">Swan: no. </span><small>Bitcoin-backed loans</small></span></div>
+    <div class="row"><span class="label">No fiat or stablecoin balance</span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">River: no. </span><small>Cash balance</small></span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">Swan: no. </span><small>Cash balance</small></span></div>
+  </section>
+  <hr class="dots">
+  <section class="group">
+    <h2>Verify</h2>
+    <div class="row"><span class="label">Open source</span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">River: no</span></span><span class="cell no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg><span class="vh">Swan: no</span></span></div>
+  </section>
+  <p class="key"><span class="yes"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M10.5 16.5l4 4 7-8.5"/></svg> Yes</span><span class="no"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="16" cy="16" r="13"/><path d="M11.5 11.5l9 9M20.5 11.5l-9 9"/></svg> No</span><span>Each yes counts 3, up to 21.</span></p>
   </div>
-            <div class="feature-value" data-service="swan">
-    <div class="collapsible-description">
-      <div class="description-preview">
-        <p class="mobile-preview">Swan Bitcoin, launched by Cory Klippsten and based in California, is a platform focused on making it easy for beginners to buy and save Bitcoin.</p>
-        <p class="desktop-preview">Swan Bitcoin, launched by Cory Klippsten and based in California, is a platform focused on making it easy for beginners to buy and save Bitcoin.</p>
-      </div>
-      <div class="description-full" style="display: none;"><p>Swan Bitcoin, launched by Cory Klippsten and based in California, is a platform focused on making it easy for beginners to buy and save Bitcoin.</p><p>What makes Swan distinct is its focus on self-custody support and education. It automatically withdraws BTC weekly to your own address and provides guides for self-custody, while also offering Swan Guard with fraud protection and identity verification tools. Swan prioritizes teaching users about Bitcoin&#039;s value for financial freedom. Swan also targets long-term savers by offering IRA products making Bitcoin tax-advantaged retirement savings easier.</p><p>Swan offers zero-fee purchases on the first $10,000, a low 0.99% fee for recurring buys, and free withdrawals to personal wallets, encouraging self-custody. Its app is praised for its clean design and simple setup. However, some users report slow customer support and issues with account restrictions.</p><p>Its vision is to onboard 10 million Bitcoin users by promoting Bitcoin as better money for a decentralized future.</p></div>
-      <button class="expand-btn" aria-expanded="false">
-        <span class="expand-text">Read more</span>
-        <span class="expand-icon"><span class="arrow-down">↓</span></span>
-      </button>
-    </div>
-  </div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row founded_in" id="founded-in" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label sublabel">Founded in</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river">2019</div>
-            <div class="feature-value" data-service="swan">2019</div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row website" id="website" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label sublabel">Website</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river"><a href="https://river.com" target="_blank">river.com</a></div>
-            <div class="feature-value" data-service="swan"><a href="https://www.swanbitcoin.com" target="_blank">swanbitcoin.com</a></div>
-          </div>
-        </td>
-      </tr>
-    
-
-      <tr class="feature-row availability" id="availability" tabindex="-1">
-        <th scope="row" class="feature-label"><div class="feature-label">Availability</div></th>
-        <td>
-          <div class="feature-values">
-            <div class="feature-value" data-service="river"><div class="availability-container"><span class="flag-icon flag-icon-us availability-icon"></span><span>Available in United States</span></div></div>
-            <div class="feature-value" data-service="swan"><div class="availability-container"><span class="flag-icon flag-icon-us availability-icon"></span><span>Available in United States</span></div></div>
-          </div>
-        </td>
-      </tr>
-     
-    </tbody></table>
-  </div>
-</div>
-
-
-<section class="brand-faq" aria-labelledby="faq-heading" data-pair="river-vs-swan">
-  <h2 id="faq-heading">FAQs</h2>
-  <div class="faq-list">
-    <details><summary>Is Swan Bitcoin or River better for beginners?</summary><div><p>Both are designed for long-term savers, not traders. River has a slightly more streamlined app experience and zero-fee recurring buys, which reduces friction for someone just starting to stack sats. Swan puts more emphasis on education and self-custody onboarding, which means a steeper initial learning curve but stronger habits from the start.</p></div></details>
-    <details><summary>How do Swan and River approach self-custody differently?</summary><div><p>Swan has a stated company goal of 'zero sats under custody' and built Swan Vault, a 2-of-3 multisig setup where you hold two keys on Blockstream Jade devices. Swan also acquired Specter, an open-source wallet, so users can recover funds independently. River encourages self-custody through auto-withdrawals and one free monthly on-chain withdrawal, but also positions itself as a long-term custodial home with in-house cold storage and monthly Proof of Reserves. Both platforms offer free withdrawals. The difference is whether the architecture nudges you toward leaving or staying.</p></div></details>
-    <details><summary>Does Swan or River charge lower fees?</summary><div><p>River offers zero-fee recurring buys after the first seven days. Swan charges 0.99% on all purchases after the first $10,000 in lifetime buys (which are free). For ongoing DCA, River is meaningfully cheaper. Both offer free withdrawals to self-custody.</p></div></details>
-    <details><summary>Can I use Swan or River outside the United States?</summary><div><p>No. Both platforms are US-only. Swan is available in all 50 states. River is available in 48 states but excludes New York and Nevada. If you're outside the US, Buoy covers other Bitcoin services that may be available in your region.</p></div></details>
-    <details><summary>What is Swan Vault and how does it compare to River's custody?</summary><div><p>Swan Vault is a collaborative self-custody solution using a 2-of-3 multisig setup. You hold two keys on Blockstream Jade signing devices, and Swan manages a third key for recovery. You can move funds without Swan's permission, and you can recover your Bitcoin independently using Specter Desktop if Swan ever disappears. River does not offer a comparable self-custody product. River's custody is institutional: in-house cold storage, multi-sig, full reserve, with auto-withdrawals to push Bitcoin to your own wallet when a balance threshold is met.</p></div></details>
-    <details><summary>Why does alignment matter when choosing a Bitcoin platform?</summary><div><p>Most comparison sites evaluate fees, features, and user experience. Those things matter. But the company you trust with your money is also building toward a specific future. A platform that builds for your independence has different incentives than one that builds to keep you. Buoy evaluates that direction because we believe the tools you use should be aligned with the future you're saving for. You can read more about how we evaluate on our About page.</p></div></details>
-  </div>
-</section>
-
-<!-- BUILD:END -->
-
-
-<section class="article-section article-section--beyond-features" aria-labelledby="article-beyond-features">
-  <h2>Beyond the Features</h2>
-<p>Swan Bitcoin and River are the two most philosophically similar Bitcoin companies in the United States. Both were founded in 2019. Both reject the crypto casino. Both are Bitcoin-only. Both founders speak fluently about debased money, long-term savings, and the corruption of the current financial system. If you're choosing between them, you're already making a good decision.</p>
-<p>But beneath the shared language, these two companies are building for fundamentally different futures. The question is which future you believe in.</p>
-<p>Cory Klippsten founded Swan to create what he calls an "intransigent minority" of 10 million Bitcoiners who understand what they own, defend it politically, and hold their own keys. Swan has an internal company goal that Klippsten describes as "completely counter to the traditional financial AUM model": zero sats under custody. To back that up, Swan acquired Specter, an open-source desktop wallet, and built Swan Vault, a collaborative 2-of-3 multisig setup where the user holds two keys using Blockstream Jade signing devices. Swan offers free withdrawals and integrates self-custody education directly into onboarding. Klippsten has framed a concept he calls the "sovereignty multiple": Bitcoin in self-custody is worth more to the user than Bitcoin held by a third party, because it eliminates counterparty risk entirely.</p>
-<p>Alex Leishman founded River to become the "world's most trusted financial institution" and the "Bitcoin bank of the world." He is building for what he calls the "dual money era," a transitional period he predicts could last decades, where people continue earning and spending in dollars while saving in Bitcoin. River reflects this by offering direct deposit, bill pay, Bitcoin interest on cash deposits (derived from Treasury rates, paid out in Bitcoin, with FDIC-insured cash via Lead Bank), and zero-fee recurring buys. The goal is for River to replace your bank entirely: receive your paycheck, pay your bills, sweep the remainder into Bitcoin, all without leaving the app.</p>
-<p>This is where the two paths diverge in ways that matter.</p>
-<p><strong>The shortest bridge vs. the most comfortable one</strong><br>Swan is building the shortest possible bridge between the fiat system and individual sovereignty. The on-ramp exists because it has to, but the architecture points toward making Swan unnecessary. If every Swan user graduated to full self-custody and circular Bitcoin economies, Klippsten's stated mission would be fulfilled.</p>
-<p>River is building the most comfortable bridge, one designed for you to stay on as long as you need. Leishman has stated that River "very much encourages self-custody" and builds features like auto-withdrawals to automate it. But he frames custody as a journey, advising newcomers not to let technical complexity stop them from getting started: just "sign up and buy $5 of Bitcoin" first, get skin in the game, and learn about hardware wallets and security later. The logic is reasonable. The problem is that the product's center of gravity pulls against the journey's destination. Bitcoin Interest on Cash, direct deposit, bill pay, inheritance planning: these features reward staying. The "vast majority" of River clients keep their Bitcoin on the platform, and the architecture is designed to make that feel safe rather than temporary.</p>
-<p><strong>The problem with the Bitcoin bank</strong><br>There is a deeper problem with the "Bitcoin bank" vision. By building River as the place where you hold dollars and Bitcoin, Leishman is treating Bitcoin as an asset within the current debt-based system. You save in Bitcoin, but you measure it in dollars. You earn interest in Bitcoin, but the yield comes from Treasury rates. The frame remains fiat. This matters because Bitcoin's security depends on decentralization: individuals running nodes, holding keys, transacting peer-to-peer. The "trusted financial institution" model, however transparent, encourages centralization. If Bitcoin remains an investment held in custodial vaults and measured in dollars, it risks the same fate as gold: captured by the system it was meant to replace.</p>
-<p><strong>The dual money era won't last</strong><br>Leishman's "dual money era" thesis assumes the dollar and Bitcoin can coexist for decades. But these are diametrically opposed systems. One is built on inflation and debasement. The other is built on scarcity and truth. An inflationary system that relies on debasement to survive cannot indefinitely coexist with a deflationary one that returns productivity gains to the people. One must eventually absorb the other. Building your infrastructure around their coexistence means building for a future that resolves into either Bitcoin winning (making your fiat features obsolete) or the control system winning (making your Bitcoin features captured). There is no stable equilibrium.</p>
-<p>This connects to Leishman's self-described "nationalist Bitcoiner" stance. He has stated that he doesn't view Bitcoin as an attack on the financial system but as a "life raft" for Americans, and that he wants the United States to disproportionately benefit from Bitcoin. It's an understandable impulse, but Bitcoin is inherently the opposite of national thinking. National thinking views the individual as a citizen whose financial activity belongs within a specific geography, subject to state knowledge and control. Bitcoin views the individual as sovereign, transacting freely across borders on an open protocol. River's US-only availability (excluding New York and Nevada) is a practical constraint, but it also reflects this national framing.</p>
-<p>Meanwhile, the medium-of-exchange transition isn't waiting for the distant future Leishman describes. It's happening now through layers, the same way the internet scaled. Bitcoin's base layer provides security and decentralization. Lightning, Liquid, and Fedimint handle the volume. Circular economies in El Salvador and Madeira already use Bitcoin as money. River runs significant Lightning infrastructure through River Lightning Services (powering exchanges including Chivo in El Salvador), which is a genuine contribution to the Bitcoin ecosystem. But River's own consumer product doesn't encourage spending or receiving Bitcoin as money. It encourages buying Bitcoin and holding it, inside River, measured in dollars.</p>
-<p><strong>Swan's real weakness</strong><br>Swan's execution has not matched its philosophy cleanly. This needs to be said directly. Swan has cycled through three custodial partners: Prime Trust (which collapsed), Fortress (which was hacked and then acquired by Ripple), and now a combination of Bakkt, BitGo, and Equity Trust. Each transition created real disruption: service outages, forced re-KYC, user anxiety. The mining business "blow up" Klippsten described, involving major litigation and significant layoffs, adds another mark. River, by contrast, built its custody infrastructure in-house from the ground up and has never experienced a custodial incident. For a company that preaches self-custody, Swan's track record of trusting the wrong custodial partners is a meaningful contradiction.</p>
-<p>But here's how I weigh this: Swan's custodial failures are operational growing pains. River's architectural direction is a philosophical choice. Growing pains can be fixed. In fact, Swan Vault, where the user holds two of three keys and can recover funds independently through Specter Desktop without Swan's involvement, is the fix. A philosophical direction that builds toward becoming the next indispensable financial institution is harder to walk back, because every feature that makes River stickier also makes the "bridge" longer.</p>
-<p>Both companies contribute to the Bitcoin ecosystem beyond their platforms. River's Lightning infrastructure powers real payment volume for other services. Swan's contribution is primarily social: 57 million YouTube views, the Pacific Bitcoin Festival, free distribution of Inventing Bitcoin, and venture investment in Bitcoin startups through Bitcoiner Ventures. Both are real contributions. River's is more technical, Swan's is more cultural, and both matter for Bitcoin's long-term adoption.</p>
-</section>
-
-<section class="article-section article-section--who-should-use" aria-labelledby="article-who-should-use">
-  <h2>Who Should Use Which?</h2>
-<p>If you plan to self-custody your Bitcoin and want a platform that actively helps you get there, use Swan. Swan Vault gives you a 2-of-3 multisig setup where you hold two keys, and you can recover your funds independently through Specter Desktop without Swan's involvement. Free withdrawals and self-custody education are built into the experience from day one. Swan is also your only Bitcoin-only option if you live in New York.</p>
-<p>If you want to accumulate Bitcoin with the lowest possible fees and prefer a clean, simple savings app, use River. Zero-fee recurring buys and Bitcoin interest on cash make it the most cost-efficient DCA platform available. River's in-house custody infrastructure is the strongest in the Bitcoin-only space if you're not ready to hold your own keys.</p>
-<p>If you're outside the United States, neither platform serves you. Check our comparisons of other non-US options on Buoy.</p>
-</section>
-
-<section class="article-section article-section--how-evaluated" aria-labelledby="article-how-evaluated">
-  <h2>How We Evaluated</h2>
-<p>We evaluated Swan and River based on their founders' public statements, product architecture, and how their incentive structures align with the transition to sound money. <a href="/about" target="_blank" rel="noopener">Read the full framework →</a></p>
-</section>
-
-<section class="article-section article-section--sources" aria-labelledby="article-sources">
-  <h2>Sources</h2>
-<p>This assessment is based on public interviews, podcast appearances, and published statements by Cory Klippsten (Swan) and Alex Leishman (River), as well as product documentation from both platforms. Key sources include founder interviews on Bitcoin podcasts, company blog posts, and help center documentation.<br>Buoy's alignment assessments are not permanent. When companies change their behavior, pricing, or architecture, we update our evaluations. If you notice something we've missed or gotten wrong, let us know.</p>
-</section>
-
 </main>
-
-</div>  <!-- container -->
-<footer>
-  <div class="footer-container">
-    <div class="footer-column">
-      <h3>Social</h3>
-      <ul>
-        <li><a href="https://snort.social/p/npub165w944kqt29hrt90l2ssc0rvmhf0u77dgezskknfnczr7r030v0s2g6kae" target="_blank">Nostr</a></li>
-        <li><a href="https://x.com/jaspervanderee" target="_blank">X</a></li>
-        <li><a href="https://github.com/jaspervanderee/buoy" target="_blank">GitHub</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h3>Learn</h3>
-      <ul>
-        <li><a href="/what-is-bitcoin">Bitcoin</a></li>
-        <li><a href="/what-is-lightning">Lightning</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h3>Support</h3>
-      <ul>
-        <li><a href="mailto:support&#64;buoybitcoin.com">Contact</a></li>
-        <li><a href="/faq">FAQ</a></li>
-        <li><a href="/privacy">Privacy</a></li>
-        <li><a href="/terms">Terms of Service</a></li>
-      </ul>
-    </div>
-    <div class="footer-column">
-      <h3>From the maker of Buoy</h3>
-      <ul>
-        <li><a href="https://dittotranscriptgenerator.com/" target="_blank" rel="noopener">Ditto</a></li>
-        <li><a href="https://breen.studio/" target="_blank" rel="noopener">Breen Studio</a></li>
-      </ul>
-    </div>
-  </div>
+<picture class="art shores" aria-hidden="true">
+  <img src="../images/shores.webp" width="2172" height="724" loading="lazy" alt="">
+</picture>
+<footer class="foot page-foot">
+  <ul>
+    <li><a href="https://snort.social/p/npub165w944kqt29hrt90l2ssc0rvmhf0u77dgezskknfnczr7r030v0s2g6kae" target="_blank" rel="noopener">Nostr</a></li>
+    <li><a href="https://x.com/jaspervanderee" target="_blank" rel="noopener">X</a></li>
+    <li><a href="https://github.com/Buoy-Bitcoin/buoy" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
+  <ul>
+    <li class="lbl">From the maker of Buoy:</li>
+    <li><a href="https://breen.studio/" target="_blank" rel="noopener">Breen Studio</a></li>
+    <li><a href="https://dittotranscriptgenerator.com/" target="_blank" rel="noopener">Ditto</a></li>
+  </ul>
 </footer>
-
-  <script src="/js/script.js"></script>
-  <script src="/js/compare.js"></script>
+<dialog class="v4v" id="v4v-pop" aria-labelledby="v4v-title">
+  <button type="button" class="x" data-close aria-label="Close"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <h2 id="v4v-title">Value for value</h2>
+  <p>If Buoy helped you choose, send back what that was worth to you.</p>
+  <img class="qr" src="../images/v4v-qr.svg" width="200" height="200" alt="QR code for the Lightning address flaxhorse13@primal.net">
+  <p class="addr"><b id="ln">flaxhorse13@primal.net</b> <button type="button" class="clear" id="copy-ln">Copy</button></p>
+  <a class="go ink" href="lightning:flaxhorse13@primal.net" autofocus>Open in wallet</a>
+</dialog>
+<script src="../js/v4v.js"></script>
 </body>
 </html>

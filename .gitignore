@@ -1,32 +1,18 @@
-# macOS system files
+# macOS
 .DS_Store
 
-# Editor settings
-.vscode/
-cursor-cache/
-.cursor-rules.md
-cursor-rules.md
+# The paintings as they came from the studio, and pieces only the earlier demos use.
+# The site itself uses the river-*.webp and shores.webp files made from them.
+images/*.png
+images/descent-*.webp
+images/seabed-*.webp
+images/shores-desktop.webp
+images/shores-mobile.webp
+images/water-*.webp
 
-# Logs and temp
-*.log
-*.tmp
-*.bak
+# The review sheet with reasons and sources is for checking at home, not for the live site.
+data/review.md
 
-# Node.js (if ever used)
+# Tools
+__pycache__/
 node_modules/
-dist/
-npm-debug.log*
-
-# Build artifacts (if added later)
-build/
-out/
-
-# Generated files
-data/services.json
-
-# Or exclude all PHP files if you have more
-*.php.cursor/
-.cursor-rules.md
-cursor-rules.md
-.cursor/
-*.php

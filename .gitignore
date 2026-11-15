@@ -16,3 +16,7 @@ data/review.md
 # Tools
 __pycache__/
 node_modules/
+
+# The licensed fonts. They are kept in the private repository buoy-fonts and served from its own address;
+# this folder is only the copy used when working on this computer.
+fonts/

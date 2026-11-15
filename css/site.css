@@ -9,9 +9,10 @@
    Homepage     --u is one row of the riverbed painting (1122 wide) at the size it is shown, so everything placed on the
                 painting keeps its place at any width */
 
-@font-face{font-family:'Baskerville Buoy';font-style:italic;font-weight:400;font-display:swap;src:url("../fonts/Baskerville-Italic.woff") format("woff")}
-@font-face{font-family:'Whitney';font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/WhitneyHTF-Book.woff") format("woff")}
-@font-face{font-family:'Whitney';font-style:normal;font-weight:500 700;font-display:swap;src:url("../fonts/WhitneyHTF-SemiBold.woff") format("woff")}
+/* The fonts come from their own address (a private repository; see .gitignore). The second url is the copy on this computer, used when that address cannot be reached. */
+@font-face{font-family:'Baskerville Buoy';font-style:italic;font-weight:400;font-display:swap;src:url("https://buoy-fonts.pages.dev/Baskerville-Italic.woff") format("woff"),url("../fonts/Baskerville-Italic.woff") format("woff")}
+@font-face{font-family:'Whitney';font-style:normal;font-weight:400;font-display:swap;src:url("https://buoy-fonts.pages.dev/WhitneyHTF-Book.woff") format("woff"),url("../fonts/WhitneyHTF-Book.woff") format("woff")}
+@font-face{font-family:'Whitney';font-style:normal;font-weight:500 700;font-display:swap;src:url("https://buoy-fonts.pages.dev/WhitneyHTF-SemiBold.woff") format("woff"),url("../fonts/WhitneyHTF-SemiBold.woff") format("woff")}
 
 :root{
   --paper:#F7EFE6; --ink:#16202C; --ink-2:#4C5E72; --cream:#F7EFE6; --deep:#547279; --orange:#EC6A48;

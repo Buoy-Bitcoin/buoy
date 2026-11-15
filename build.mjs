@@ -15,6 +15,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const SITE = 'https://buoybitcoin.com';
+const FONTS = 'https://buoy-fonts.pages.dev';      // the licensed fonts are served from their own address; css/site.css names it too
 const data = JSON.parse(readFileSync(join(ROOT, 'data/services.json'), 'utf8'));
 const { groups, services } = data;
 const POINTS = 3;                                   // each yes is worth 3, so seven markers make 21
@@ -45,8 +46,8 @@ ${gone ? '' : `<meta property="og:url" content="${SITE}/${path}">
 `}<link rel="icon" href="${up}favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="${up}favicon-32x32.png">
 <link rel="apple-touch-icon" href="${up}apple-touch-icon.png">
-<link rel="preload" as="font" type="font/woff" href="${up}fonts/Baskerville-Italic.woff" crossorigin>
-<link rel="preload" as="font" type="font/woff" href="${up}fonts/WhitneyHTF-Book.woff" crossorigin>
+<link rel="preload" as="font" type="font/woff" href="${FONTS}/Baskerville-Italic.woff" crossorigin>
+<link rel="preload" as="font" type="font/woff" href="${FONTS}/WhitneyHTF-Book.woff" crossorigin>
 ${extra}<link rel="stylesheet" href="${up}css/site.css">
 </head>
 <body>
